@@ -17,7 +17,7 @@
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "vim-clojure-static"]
-	path = vim-clojure-static
+	path = bundle/vim-clojure-static
 	url = https://github.com/guns/vim-clojure-static.git
 [submodule "bundle/vim-scala"]
 	path = bundle/vim-scala
