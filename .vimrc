@@ -52,7 +52,7 @@ inoremap <F12> <C-o>:syntax sync fromstart<CR>
 "plugin-specific bindings
 let g:ctrlp_map='<leader>p'
 let g:ctrlp_command='CtrlP'
-let g:ctrlp_wordking_path_mode='ra'
+let g:ctrlp_working_path_mode='ra'
 
 nnoremap <leader>o :NERDTreeToggle<cr>
 let NERDTreeQuitOnOpen=1
