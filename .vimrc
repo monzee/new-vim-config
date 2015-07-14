@@ -22,11 +22,12 @@ set cc=81
 set cursorline
 set showmatch
 set wildignore+=*/.git/*,*/.svn/*,.*.swp
+set go-=lrLMbT
 
 map j gj
 map k gk
 map Y y$
-
+map <Space> <C-f>
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
@@ -46,6 +47,11 @@ nnoremap <C-S-Down> <C-w>j
 "highlight last inserted text
 nnoremap gV `[v`]
 
+"emacs movement keys
+noremap b B
+noremap f E
+noremap d dw
+
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
 
@@ -59,3 +65,17 @@ let NERDTreeQuitOnOpen=1
 
 let g:airline_powerline_fonts=1
 set laststatus=2 "always show status line
+
+vmap <leader>xv <Plug>SendSelectionToTmux
+nmap <leader>xp <Plug>NormalModeSendToTmux
+nmap <leader>xs <Plug>SetTmuxVars
+
+au BufNewFile,BufRead *.twig set ft=htmldjango
+
+"android stuff
+let g:android_sdk_path = '/home/mz/opt/android-sdk'
+let g:gradle_path = '/home/mz/opt/android-studio/gradle/gradle-2.4'
+
+"javacomplete2
+autocmd FileType java set omnifunc=javacomplete#Complete
+noremap <F4> call javacomplete#AddImport()<cr>
