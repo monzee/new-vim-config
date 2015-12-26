@@ -3,6 +3,8 @@ call pathogen#infect()
 syntax on
 filetype plugin indent on
 colo badwolf
+hi Normal ctermbg=none
+hi NonText ctermbg=none
 
 set nu
 set t_Co=256
@@ -23,6 +25,7 @@ set cursorline
 set showmatch
 set wildignore+=*/.git/*,*/.svn/*,.*.swp
 set go-=lrLMbT
+set dir=~/.vim/swp//
 
 map j gj
 map k gk
